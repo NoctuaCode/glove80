@@ -540,8 +540,6 @@
         };
     };
 
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
