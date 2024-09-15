@@ -114,7 +114,7 @@
         #define POS_RH_C6R5 63
         #define POS_RH_C6R6 79
 
-        #define DIFFICULTY_LEVEL 5
+        #define DIFFICULTY_LEVEL 4
         #if defined(DIFFICULTY_LEVEL) && DIFFICULTY_LEVEL > 0
         #define DIFFICULTY_THRESHOLD ((6-DIFFICULTY_LEVEL)*100)
         #ifndef HOMEY_HOLDING_TIME
