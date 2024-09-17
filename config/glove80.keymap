@@ -334,12 +334,12 @@
 
         default_layer {
             bindings = <
-&kp F1          &kp F2        &kp F3        &kp F4      &kp F5                                                                                                                                                             &kp F6      &kp F7      &kp F8        &kp F9        &kp F10
-&num_row_grave  &num_row_1    &num_row_2    &num_row_3  &num_row_4  &num_row_5                                                                                                                                 &num_row_6  &num_row_7  &num_row_8  &num_row_9    &num_row_0    &kp GRAVE
-&row_tab        &kp SEMI      &kp COMMA     &kp PERIOD  &kp P       &kp Y                                                                                                                                      &kp F       &kp G       &kp C       &kp R         &kp L         &kp FSLH
-&kp DOLLAR      &kp A         &kp O         &kp E       &kp U       &kp I                                                                                                                                      &kp D       &kp H       &kp T       &kp N         &kp S         &kp MINUS
-&layer_td       &kp SQT       &kp Q         &kp J       &kp K       &kp X       &mt LEFT_ALT ESCAPE       &kp LCMD          &kp LA(LC(LG(LSHFT)))  &kp RG(RC(LA(RSHFT)))  &kp LSHFT           &mt RMETA TAB    &kp B       &kp M       &kp W       &kp V         &kp Z         &kp BSLH
-&magic MAGIC 0  &kp C_BRI_DN  &kp C_BRI_UP  &kp LEFT    &kp RIGHT               &mt LEFT_SHIFT BACKSPACE  &mt LCTRL DELETE  &kp LC(LA(LSHFT))      &kp RC(LA(RSHFT))      &mt LEFT_ALT ENTER  &mt RCTRL SPACE              &kp UP      &kp DOWN    &kp C_VOL_DN  &kp C_VOL_UP  &kp PSCRN
+&kp F1          &kp F2        &kp F3        &kp F4      &kp F5                                                                                                                                                       &kp F6      &kp F7      &kp F8        &kp F9        &kp F10
+&num_row_grave  &num_row_1    &num_row_2    &num_row_3  &num_row_4  &num_row_5                                                                                                                           &num_row_6  &num_row_7  &num_row_8  &num_row_9    &num_row_0    &kp GRAVE
+&row_tab        &kp SEMI      &kp COMMA     &kp PERIOD  &kp P       &kp Y                                                                                                                                &kp F       &kp G       &kp C       &kp R         &kp L         &kp FSLH
+&kp DOLLAR      &kp A         &kp O         &kp E       &kp U       &kp I                                                                                                                                &kp D       &kp H       &kp T       &kp N         &kp S         &kp MINUS
+&layer_td       &kp SQT       &kp Q         &kp J       &kp K       &kp X       &mt LCTRL ESCAPE     &kp LCMD         &kp LA(LC(LG(LSHFT)))  &kp RG(RC(LA(RSHFT)))  &kp LSHFT           &mt RGUI TAB     &kp B       &kp M       &kp W       &kp V         &kp Z         &kp BSLH
+&magic MAGIC 0  &kp C_BRI_DN  &kp C_BRI_UP  &kp LEFT    &kp RIGHT               &mt LSHFT BACKSPACE  &mt LALT DELETE  &kp LC(LA(LSHFT))      &kp RC(LA(RSHFT))      &mt LEFT_ALT ENTER  &mt RCTRL SPACE              &kp UP      &kp DOWN    &kp C_VOL_DN  &kp C_VOL_UP  &kp PSCRN
             >;
         };
 
