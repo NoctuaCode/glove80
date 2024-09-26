@@ -9,6 +9,7 @@
 #define DEFAULT 0
 #define LOWER 1
 #define MAGIC 2
+#define ENGRAM 3
 
 / {
 
@@ -586,6 +587,159 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        pipe_n1: pipe_n1 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "pipe_n1";
+            bindings = <&kp PIPE>, <&kp N1>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        equal_n2: equal_n2 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "equal_n2";
+            bindings = <&kp EQUAL>, <&kp N2>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        
+        tilde_n3: tilde_n3 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "tilde_n3";
+            bindings = <&kp TILDE>, <&kp N3>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        plus_n4: plus_n4 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "plus_n4";
+            bindings = <&kp PLUS>, <&kp N4>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        lower_n5: lower_n5 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "lower_n5";
+            bindings = <&kp LT>, <&kp N5>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        greater_n6: greater_n6 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "greater_n6";
+            bindings = <&kp GT>, <&kp N6>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        caret_n7: caret_n7 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "caret_n7";
+            bindings = <&kp CARET>, <&kp N7>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ampersand_n8: ampersand_n8 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ampersand_n8";
+            bindings = <&kp AMPS>, <&kp N8>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        percent_n9: percent_n9 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "percent_n9";
+            bindings = <&kp PERCENT>, <&kp N9>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        astrk_n0: astrk_n0 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "astrk_n0";
+            bindings = <&kp ASTRK>, <&kp N0>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        at_grave: at_grave {
+            compatible = "zmk,behavior-mod-morph";
+            label = "at_grave";
+            bindings = <&kp AT>, <&kp GRAVE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        hash_dollar: hash_dollar {
+            compatible = "zmk,behavior-mod-morph";
+            label = "hash_dollar";
+            bindings = <&kp HASH>, <&kp DOLLAR>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        sqt_lpar: sqt_lpar {
+            compatible = "zmk,behavior-mod-morph";
+            label = "sqt_lpar";
+            bindings = <&kp SQT>, <&kp LPAR>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        dqt_rpar: dqt_rpar {
+            compatible = "zmk,behavior-mod-morph";
+            label = "dqt_rpar";
+            bindings = <&kp DQT>, <&kp RPAR>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        comma_semi: comma_semi {
+            compatible = "zmk,behavior-mod-morph";
+            label = "comma_semi";
+            bindings = <&kp COMMA>, <&kp SEMI>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        period_colon: period_colon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "period_colon";
+            bindings = <&kp PERIOD>, <&kp COLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        question_exclamation: question_exclamation {
+            compatible = "zmk,behavior-mod-morph";
+            label = "question_exclamation";
+            bindings = <&kp QUESTION>, <&kp EXCL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -655,7 +809,7 @@
             &trans        &none         &none       &kp UP      &none      &kp END                                                             &kp RPAR   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp SLCK
             &trans        &none         &kp LEFT    &kp DOWN    &kp RIGHT  &kp PG_UP                                                           &kp PRCNT  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &none
             &trans        &kp K_CMENU   &none       &kp F11     &kp F12    &kp PG_DN   &trans  &trans  &to DEFAULT     &trans  &trans  &trans  &kp COMMA  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &trans
-            &trans        &kp CAPS      &kp INS     &kp F11     &kp F12                &trans  &trans  &trans          &trans  &trans  &trans             &kp KP_N0   &kp KP_N0     &kp KP_DOT     &kp KP_ENTER     &trans
+            &trans        &kp CAPS      &kp INS     &kp F11     &kp F12                &trans  &trans  &to ENGRAM      &trans  &trans  &trans             &kp KP_N0   &kp KP_N0     &kp KP_DOT     &kp KP_ENTER     &trans
             >;
         };
 
@@ -667,6 +821,17 @@
             &bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                     &none  &none  &none  &none  &none  &bootloader
             &sys_reset   &none            &none            &none            &none            &none           &bt_2  &bt_3  &none            &none  &none  &none  &none  &none  &none  &none  &none  &sys_reset
             &none        &none            &none            &none            &none                            &bt_0  &bt_1  &out OUT_USB     &none  &none  &none         &none  &none  &none  &none  &none
+            >;
+        };
+
+        engram_layer {
+            bindings = <
+            &kp F1          &kp F2              &kp F3              &kp F4               &kp F5                                                                                                                 &kp F6                &kp F7                &kp F8               &kp F9               &kp F10
+            &kp LBKT        &pipe_n1            &equal_n2           &tilde_n3            &plus_n4             &lower_n5                                                                  &greater_n6            &caret_n7             &ampersand_n8         &percent_n9          &astrk_n0            &kp RBKT
+            &at_grave       &kp B               &kp Y               &kp O                &kp U                &sqt_lpar                                                                  &dqt_rpar              &kp L                 &kp D                 &kp W                &kp V                &kp Z
+            &hash_dollar    &left_pinky LGUI C  &left_ring1 LALT I  &left_middy LCTRL E  &left_index LSHFT A  &comma_semi                                                                &period_colon          &right_index RSHFT H  &right_middy RCTRL T  &right_ring1 LALT S  &right_pinky RGUI N  &kp Q
+            &layer_td       &kp G               &kp X               &kp J                &kp K                &kp MINUS   &kp ESC   &kp LEFT  &kp RIGHT    &kp DOWN  &kp UP   &kp TAB    &question_exclamation  &kp R                 &kp M                 &kp F                &kp P                &kp BSLH
+            &magic MAGIC 0  &kp C_PREV          &kp C_PP            &kp C_NEXT           &kp F11                          &kp BSPC  &kp DEL   &kp HOME     &kp END   &kp RET  &kp SPACE                         &kp F12               &kp C_VOL_DN          &kp C_MUTE           &kp C_VOL_UP         &kp PSCRN
             >;
         };
     };
