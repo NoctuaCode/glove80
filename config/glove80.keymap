@@ -30,32 +30,14 @@
             bindings = <&mo>, <&rgb_ug_status_macro>;
         };
 
-        thumb_1: thumb_1 {
-            compatible = "zmk,behavior-mod-tap";
-            #binding-cells = <0>;
+        thumb: thumb {
+            compatible = "zmk,behavior-hold-tap";
+            flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            bindings = <&mo LCTRL>, <&key_repeat>;
-        };
-
-        thumb_2: thumb_2 {
-            compatible = "zmk,behavior-mod-tap";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mo LGUI>, <&key_repeat>;
-        };
-
-        thumb_3: thumb_3 {
-            compatible = "zmk,behavior-mod-tap";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mo LALT>, <&key_repeat>;
-        };
-
-        thumb_4: thumb_4 {
-            compatible = "zmk,behavior-mod-tap";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mo LSHFT>, <&key_repeat>;
+            quick-tap-ms = <300>;
+            require-prior-idle-ms = <250>;
+            #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
         };
     };
 
@@ -105,12 +87,12 @@
 
         default_layer {
             bindings = <
-            &kp F1          &kp F2      &kp F3    &kp F4      &kp F5                                                                                                       &kp F6    &kp F7        &kp F8      &kp F9        &kp F10
-            &kp EQUAL       &kp N1      &kp N2    &kp N3      &kp N4     &kp N5                                                                                    &kp N6  &kp N7    &kp N8        &kp N9      &kp N0        &kp GRAVE
-            &kp TAB         &kp Q       &kp W     &kp E       &kp R      &kp T                                                                                     &kp Y   &kp U     &kp I         &kp O       &kp P         &kp SQT
-            &kp ESC         &kp A       &kp S     &kp D       &kp F      &kp G                                                                                     &kp H   &kp J     &kp K         &kp L       &kp SEMI      &kp MINUS
-            &layer_td       &kp Z       &kp X     &kp C       &kp V      &kp B   &kp LEFT       &kp RIGHT     &kp HOME      &kp UP   &kp DOWN      &kp UP          &kp N   &kp M     &kp COMMA     &kp PERIOD  &kp FSLH      &kp BSLH
-            &magic MAGIC 0  &kp C_PREV  &kp C_PP  &kp C_NEXT  &kp LBKT           &thumb_1 BSPC  &thumb_2 DEL  &kp F11       &kp F12  &thumb_3 RET  &thumb_4 SPACE          &kp RBKT  &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &kp PSCRN
+            &kp F1          &kp F2      &kp F3    &kp F4      &kp F5                                                                                                                     &kp F6    &kp F7        &kp F8      &kp F9        &kp F10
+            &kp EQUAL       &kp N1      &kp N2    &kp N3      &kp N4     &kp N5                                                                                                  &kp N6  &kp N7    &kp N8        &kp N9      &kp N0        &kp GRAVE
+            &kp TAB         &kp Q       &kp W     &kp E       &kp R      &kp T                                                                                                   &kp Y   &kp U     &kp I         &kp O       &kp P         &kp SQT
+            &kp ESC         &kp A       &kp S     &kp D       &kp F      &kp G                                                                                                   &kp H   &kp J     &kp K         &kp L       &kp SEMI      &kp MINUS
+            &layer_td       &kp Z       &kp X     &kp C       &kp V      &kp B   &kp LEFT           &kp RIGHT        &kp HOME      &kp UP   &kp DOWN         &kp UP              &kp N   &kp M     &kp COMMA     &kp PERIOD  &kp FSLH      &kp BSLH
+            &magic MAGIC 0  &kp C_PREV  &kp C_PP  &kp C_NEXT  &kp LBKT           &thumb LCTRL BSPC  &thumb LGUI DEL  &kp F11       &kp F12  &thumb LALT RET  &thumb LSHFT SPACE          &kp RBKT  &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &kp PSCRN
             >;
         };
 
