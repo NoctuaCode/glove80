@@ -17,7 +17,6 @@
         // Configure it as a tap dance, so the first tap (or hold) is a &mo and the second tap is a &to
         layer_td: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
-            label = "LAYER_TAP_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mo LOWER>, <&to LOWER>;
@@ -25,7 +24,6 @@
 
         magic: magic_hold_tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "MAGIC_HOLD_TAP";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
@@ -34,7 +32,6 @@
 
         thumb_1: thumb_1 {
             compatible = "zmk,behavior-mod-tap";
-            label = "THUMB_1";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mo LCTRL>, <&key_repeat>;
@@ -42,7 +39,6 @@
 
         thumb_2: thumb_2 {
             compatible = "zmk,behavior-mod-tap";
-            label = "THUMB_2";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mo LGUI>, <&key_repeat>;
@@ -50,7 +46,6 @@
 
         thumb_3: thumb_3 {
             compatible = "zmk,behavior-mod-tap";
-            label = "THUMB_3";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mo LALT>, <&key_repeat>;
@@ -58,7 +53,6 @@
 
         thumb_4: thumb_4 {
             compatible = "zmk,behavior-mod-tap";
-            label = "THUMB_4";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mo LSHFT>, <&key_repeat>;
@@ -67,7 +61,6 @@
 
     macros {
         rgb_ug_status_macro: rgb_ug_status_macro_0 {
-            label = "RGB_UG_STATUS";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -75,7 +68,6 @@
         };
 
         bt_0: bt_profile_macro_0 {
-            label = "BT_0";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -84,7 +76,6 @@
         };
 
         bt_1: bt_profile_macro_1 {
-            label = "BT_1";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -93,7 +84,6 @@
         };
 
         bt_2: bt_profile_macro_2 {
-            label = "BT_2";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -102,7 +92,6 @@
         };
 
         bt_3: bt_profile_macro_3 {
-            label = "BT_3";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
