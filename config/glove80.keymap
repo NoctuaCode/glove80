@@ -203,7 +203,7 @@
         default_layer {
             bindings = <
             &kp F1          &kp F2            &kp F3            &kp F4             &kp F5                                                                                                 &kp F6             &kp F7             &kp F8            &kp F9               &kp F10
-            &dollar_tilte   &plus_n1          &lbkt_n2          &lbrc_n3           &lpar_n4           &amps_n5                                                                 &equal_n6  &rpar_n7           &rbrc_n8           &rbkt_n9          &astrk_n0            &excl_percent
+            &dollar_tilde   &plus_n1          &lbkt_n2          &lbrc_n3           &lpar_n4           &amps_n5                                                                 &equal_n6  &rpar_n7           &rbrc_n8           &rbkt_n9          &astrk_n0            &excl_percent
             &at_caret       &kp SEMI          &kp COMMA         &kp PERIOD         &kp P              &kp Y                                                                    &kp F      &kp G              &kp C              &kp R             &kp L                &kp FSLH
             &bslh_hash      &hold_tap LGUI A  &hold_tap LALT O  &hold_tap LCTRL E  &hold_tap LSHFT U  &kp I                                                                    &kp D      &hold_tap RSHFT H  &hold_tap RCTRL T  &hold_tap LALT N  &hold_tap RGUI S     &kp MINUS
             &pipe_grave     &kp SQT           &kp Q             &kp J              &kp K              &kp X   &kp ESC   &kp LEFT   &kp RIGHT     &kp DOWN &kp UP    &kp TAB    &kp B      &kp M              &kp W              &kp V             &kp Z                &layer_td
