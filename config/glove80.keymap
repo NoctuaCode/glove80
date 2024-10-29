@@ -165,7 +165,7 @@
         pipe_grave: pipe_grave {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp GRAVE>, <&kp PIPE>;
+            bindings = <&kp PIPE>, <&kp GRAVE>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
