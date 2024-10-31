@@ -48,6 +48,14 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
+        dollar_hash: dollar_hash {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DOLLAR>, <&kp HASH>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
         plus_n1: plus_n1 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -208,12 +216,12 @@
 
         default_layer {
             bindings = <
-&kp F1          &kp F2            &kp F3            &kp F4             &kp F5                                                                                                 &kp F6             &kp F7             &kp F8            &kp F9               &kp F10
-&dollar_tilde   &plus_n1          &lbkt_n2          &lbrc_n3           &lpar_n4           &amps_n5                                                               &equal_n6    &rpar_n7           &rbrc_n8           &rbkt_n9          &astrk_n0            &excl_percent
-&at_caret       &kp SEMI          &kp COMMA         &kp PERIOD         &kp P              &kp Y                                                                  &kp F        &kp G              &kp C              &kp R             &kp L                &kp FSLH
-&bslh_hash      &hold_tap LGUI A  &hold_tap LALT O  &hold_tap LCTRL E  &hold_tap LSHFT U  &kp I                                                                  &kp D        &hold_tap RSHFT H  &hold_tap RCTRL T  &hold_tap LALT N  &hold_tap RGUI S     &kp MINUS
-&layer_td       &kp SQT           &kp Q             &kp J              &kp K              &kp X     &kp DEL   &kp LEFT  &kp RIGHT  &kp DOWN  &kp UP   &kp TAB    &kp B        &kp M              &kp W              &kp V             &kp Z                &pipe_grave
-&magic MAGIC 0  &kp C_PREV        &kp C_PP          &kp C_NEXT         &kp F11                      &kp BSPC  &kp ESC   &kp HOME   &kp END   &kp RET  &kp SPACE               &kp F12            &kp C_VOL_DN       &kp C_MUTE        &kp C_VOL_UP         &kp PSCRN
+&kp F1          &kp F2            &kp F3            &kp F4             &kp F5                                                                                                      &kp F6             &kp F7             &kp F8            &kp F9               &kp F10
+&dollar_hash    &plus_n1          &lbkt_n2          &lbrc_n3           &lpar_n4           &amps_n5                                                                    &equal_n6    &rpar_n7           &rbrc_n8           &rbkt_n9          &astrk_n0            &excl_percent
+&kp TAB         &kp SEMI          &kp COMMA         &kp PERIOD         &kp P              &kp Y                                                                       &kp F        &kp G              &kp C              &kp R             &kp L                &kp FSLH
+&kp ESC         &kp A             &kp O             &kp E              &kp U              &kp I                                                                       &kp D        &kp H              &kp T              &kp N             &kp S                &kp MINUS
+&kp BSLH        &kp SQT           &kp Q             &kp J              &kp K              &kp X     &kp LSHFT &kp LALT  &magic MAGIC 0  &kp HOME  &kp LGUI &kp LCTRL  &kp B        &kp M              &kp W              &kp V             &kp Z                &kp GRAVE
+&layer_td       &kp C_PREV        &kp C_PP          &kp C_NEXT         &kp F11                      &kp BSPC  &kp RET   &kp PSCRN       &kp END   &kp DEL  &kp SPACE               &kp F12            &kp C_VOL_DN       &kp C_MUTE        &kp C_VOL_UP         &magic MAGIC 0
             >;
         };
 
